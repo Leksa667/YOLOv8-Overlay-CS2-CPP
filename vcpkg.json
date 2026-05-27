@@ -1,0 +1,10 @@
+{
+  "name": "yolov8-overlay-cs2",
+  "version": "1.0.0",
+  "dependencies": [
+    {
+      "name": "opencv4",
+      "features": ["dnn"]
+    }
+  ]
+}
