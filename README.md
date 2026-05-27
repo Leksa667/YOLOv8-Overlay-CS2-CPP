@@ -118,10 +118,10 @@ For bypassing software-level input detection, flash `arduino_mouse\arduino_mouse
 | `U\n` | Left button up |
 
 **Humanization features built into the firmware:**
-- Sub-pixel accumulation (Q8.8 fixed-point) — fractional moves are never dropped
-- Report-rate timing jitter — ~37% of reports staggered 400–1600 µs
-- Inertia residual — 1 px trailing move after large movements
-- PRNG seeded from analog pin noise (A0/A1) — unique signature every boot
+- Sub-pixel accumulation (Q8.8 fixed-point) - fractional moves are never dropped
+- Report-rate timing jitter - ~37% of reports staggered 400–1600 µs
+- Inertia residual - 1 px trailing move after large movements
+- PRNG seeded from analog pin noise (A0/A1) - unique signature every boot
 
 **How to flash:**
 1. Arduino IDE → Tools → Board → **Arduino Micro** (or Leonardo)
