@@ -81,6 +81,9 @@ Launch **CS2 in borderless windowed mode**, then run:
 .\x64\Release\YOLOv8_Overlay_CS2.exe
 ```
 
+<img width="1280" height="960" alt="screen" src="https://github.com/user-attachments/assets/2b50a9ef-1456-4040-aa22-98b2ffb46fbf" />
+
+
 A startup dialog lets you choose between **Normal Mode** (Windows SendInput) and **Arduino Mode** (USB HID bridge).
 
 ---
