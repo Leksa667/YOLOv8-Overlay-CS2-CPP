@@ -1,5 +1,6 @@
 # YOLOv8 CS2 Overlay — C++
 
+Updated version of https://github.com/Leksa667/YOLOv8-Overlay-CS2 and merged from python to C++ to be more fast
 Real-time overlay for Counter-Strike 2 powered by YOLOv8 + ONNX Runtime.  
 Transparent Win32 window drawn over the game — zero impact on CS2 performance.
 
