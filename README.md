@@ -1,21 +1,21 @@
-# YOLOv8 CS2 Overlay — C++
+# YOLOv8 CS2 Overlay - C++
 
 Updated version of https://github.com/Leksa667/YOLOv8-Overlay-CS2 and merged from python to C++ to be more fast
 Real-time overlay for Counter-Strike 2 powered by YOLOv8 + ONNX Runtime.  
-Transparent Win32 window drawn over the game — zero impact on CS2 performance.
+Transparent Win32 window drawn over the game - zero impact on CS2 performance.
 
 ---
 
 ## Features
 
-- **DXGI Desktop Duplication** — near-zero latency GPU screen capture
+- **DXGI Desktop Duplication** - near-zero latency GPU screen capture
 - **CUDA/GPU inference** via ONNX Runtime (CPU fallback automatic)
-- **4-class detection** — CT body, CT head, T body, T head
-- **3 box styles** — full box, corner brackets, skeleton
-- **Aimbot modes** — FOV assist (hold key) and lock mode (toggle)
+- **4-class detection** - CT body, CT head, T body, T head
+- **3 box styles** - full box, corner brackets, skeleton
+- **Aimbot modes** - FOV assist (hold key) and lock mode (toggle)
 - **Head / body aim point** toggle
 - **Recoil Control System (RCS)** with adjustable strength
-- **Arduino USB HID mode** — mouse movements sent via ATmega32U4 serial bridge with built-in humanization (sub-pixel accumulation, jitter, inertia residual)
+- **Arduino USB HID mode** - mouse movements sent via ATmega32U4 serial bridge with built-in humanization (sub-pixel accumulation, jitter, inertia residual)
 - **Per-class color picker** and visibility toggles
 - **Configurable hotkeys** (reassignable in-overlay)
 - **Draggable HUD** with 4 tabs: Aim, Visuals, Misc, Config
@@ -37,7 +37,7 @@ Transparent Win32 window drawn over the game — zero impact on CS2 performance.
 
 ## Quick Setup
 
-### 1 — Download dependencies
+### 1 - Download dependencies
 
 ```powershell
 .\setup.ps1
@@ -45,7 +45,7 @@ Transparent Win32 window drawn over the game — zero impact on CS2 performance.
 
 Downloads and extracts OpenCV 4.9.0 and ONNX Runtime CPU into `deps\`.
 
-### 2 — (Optional) Switch to GPU inference
+### 2 - (Optional) Switch to GPU inference
 
 ```powershell
 .\setup_gpu_ort.ps1
@@ -55,14 +55,14 @@ Replaces the CPU ONNX Runtime with the GPU (CUDA 12 / cuDNN 9.x) build.
 Requires an NVIDIA GPU with up-to-date drivers.  
 After running this script, rebuild the solution.
 
-### 3 — Build
+### 3 - Build
 
 Open `YOLOv8_Overlay_CS2.sln` in Visual Studio 2022.  
 Select **Release | x64** and press **Ctrl+Shift+B**.
 
 The executable lands in `x64\Release\YOLOv8_Overlay_CS2.exe`.
 
-### 4 — Add the model
+### 4 - Add the model
 
 Place `best.onnx` next to the executable:
 
@@ -74,7 +74,7 @@ x64\Release\
 └── onnxruntime_providers_shared.dll
 ```
 
-### 5 — Run
+### 5 - Run
 
 Launch **CS2 in borderless windowed mode**, then run:
 
